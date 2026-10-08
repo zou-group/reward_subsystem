@@ -1,0 +1,16 @@
+# Versions of the environment the paper's results were produced with.
+torch==2.8.0
+vllm==0.10.2
+transformers>=4.56,<5
+accelerate
+numpy
+scipy
+scikit-learn
+matplotlib
+sympy
+regex
+word2number
+pebble
+# latex2sympy2 needs this exact ANTLR runtime (4.11+ breaks its import).
+latex2sympy2==1.9.1
+antlr4-python3-runtime==4.7.2

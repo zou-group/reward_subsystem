@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reward_subsystem"
+version = "1.0.0"
+description = "Value neurons and dopamine neurons: the sparse reward subsystem of RL-trained LLMs"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers",
+    "accelerate",
+    "vllm",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "sympy",
+    "regex",
+    "word2number",
+    "pebble",
+    "latex2sympy2==1.9.1",
+    "antlr4-python3-runtime==4.7.2",
+]
+
+[tool.setuptools]
+packages = ["reward_subsystem"]
